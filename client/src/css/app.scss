@@ -1,16 +1,22 @@
-@import "~bootstrap/scss/bootstrap";
-
 @import "variables";
 @import "shared/base";
-
-html {
-  background: url("https://source.unsplash.com/2560x1440/?forest,mountain") center no-repeat fixed;
-}
 
 body {
   background: rgba(#000000, 0.6);
   padding: 0px 20px 20px 20px;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+html,body {
+  margin: 0;
+  padding: 0
+}
+
+#container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-brand {
@@ -31,9 +37,11 @@ body {
   }
 }
 
-.btn-action {
+button {
+  background: none;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 
